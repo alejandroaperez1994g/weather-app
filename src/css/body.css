@@ -1,0 +1,51 @@
+.content__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0;
+}
+.weather__icon{
+    height: 200px;
+}
+.min__max-image{
+    height: 25px;
+}
+.max__min__temperature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.max__min{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.weather__description{
+    font-size: 1.5rem;
+    margin: 0;
+}
+.weather__temperature{
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+.temperature__container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.error{
+    border:none;
+    background: #FA58B6;
+    font-size: 1.5rem;
+    color : #fff;
+    padding: 10px;
+border-radius: 10px;
+}
+.hide{
+    display: none;
+}
+

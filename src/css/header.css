@@ -1,0 +1,17 @@
+.header__search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+}
+.location__image{
+    height: 20px;
+}
+.search__input{
+    background: #fff;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+}

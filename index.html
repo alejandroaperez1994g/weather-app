@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./src/js/main.js" type="module"></script>
+    <link href="./src/css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./src/assets/icons/favicon.png">
+    <title>AccuWeather</title>
+</head>
+
+<body id="body__container" class="sunny">
+    <main class="main__content__card">
+        <div class="content__header">
+            <div class="header__search">
+                <img class="location__image" src="./src/assets/icons/location.png" alt="location">
+                <input id='search-input' type="text" class="search__input" placeholder="Canary Islands">
+            </div>
+        </div>
+        <div class="content__body">
+            <img id="weather__icon"
+                src="https://cdn-icons.flaticon.com/png/512/3093/premium/3093390.png?token=exp=1652201243~hmac=0bf7c2083ab45fc2b8c697df25f6c220"
+                alt="weather-icon" class="weather__icon">
+            <p id='error-message' class="error hide">City not found</p>
+            <div class="temperature__container">
+                <p id="weather__temperature" class="weather__temperature"></p>
+                <div class="max__min">
+                    <div class="max__min__temperature"> <img src="./src/assets/img/hot.png" alt=""
+                            class="min__max-image"><span id="max-temp"></span></div>
+                    <div class="max__min__temperature"> <img src="./src/assets/img/cold.png" alt=""
+                            class="min__max-image"><span id="min-temp"></span></div>
+                </div>
+            </div>
+            <p id="weather-description" class="weather__description">Clear Sky</p>
+        </div>
+        <div class="content__footer">
+            <div class="utils__card humidity_card">
+                <img src="./src/assets/icons/humidity.png" alt="" class="utils__image">
+                <p id="humidity-value" class="utils__description"></p>
+            </div>
+            <div class="utils__card wind_card">
+                <img src="./src/assets/icons/wind.png" alt="" class="utils__image">
+                <p id="wind-value" class="utils__description"></p>
+            </div>
+            <div class="utils__card visibility_card">
+                <img src="./src/assets/icons/low-visibility.png" alt="" class="utils__image">
+                <p id="visibility-value" class="utils__description"></p>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

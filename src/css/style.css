@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./body.css');
+@import url('./footer.css');
+
+:root{
+    --font-color-white: #fff;
+    --font-color-black: #000;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    background: #1A1A40;
+    gap: 1rem;
+}
+.cloudy{
+    background-image: url('../assets/img/cloudy.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sunny{
+    background-image: url('../assets/img/sunny.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(font-color-black);
+}
+.night{
+    background-image: url('../assets/img/night.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(font-color-white);
+}
+
+.main__content__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90vw;
+    height: 90vh;
+    background: rgba( 39, 0, 130, 0.15 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 3px );
+-webkit-backdrop-filter: blur( 3px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.night_time{
+    color: white;
+}
+
+@media screen and (min-width: 460px) {
+    .main__content__card{
+        width: 450px;
+        height: 850px;
+    }
+}
