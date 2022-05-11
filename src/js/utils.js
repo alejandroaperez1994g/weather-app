@@ -42,8 +42,8 @@ const removeErrorWrongCity = () => {
 const getTime = () => {
   const hours = new Date().getHours();
   if (hours > 20) {
-    body.classList.toggle("sunny");
-    body.classList.toggle("night");
+    body.classList.remove("sunny");
+    body.classList.add("night");
     weatherTemperature.classList.toggle("night_time");
     minTemp.classList.toggle("night_time");
     maxTemp.classList.toggle("night_time");
